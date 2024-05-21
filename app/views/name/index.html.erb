@@ -1,0 +1,12 @@
+<h1>hello World!</h1>
+<h2><%=Name.count%></h2>
+<div id="Name">
+    <% @names .each do |name| %>
+      <%=  name.id %>
+      <%=  name %>
+
+      <p>
+        <%= link_to "Show this name",name %>
+      </p>
+    <% end %>
+  </div>
